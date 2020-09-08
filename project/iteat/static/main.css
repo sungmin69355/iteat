@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+@import url('https://fonts.googleapis.com/css?family=BenchNine:700');
 .snip1535 {
   background-color: #c47135;
   border: none;
@@ -53,23 +53,31 @@
   height: 100%;
   width: 100%;
 }
-      #titlediv {
-        padding: 40px;
-      }
-      #title {
-        padding: 30px;
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-        background-color: rgba( 255, 255, 255, 0.5 );
-      }
-      #QUIZ {
-        border: 5px;
+#titlediv {
+  padding: 10px;
+}
+#title {
+  padding: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#main {
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#QUIZ {
+  border: 5px;
 
-        padding: 40px;
-        text-align : center;
-        margin-left: 60px; 
-        margin-right:60px;
-        border-style: solid;
-        border-width: 5px;
-        }
+  padding: 40px;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-style: solid;
+  border-width: 5px;
+}
+
