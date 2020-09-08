@@ -15,6 +15,7 @@
   position: relative;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
 }
 .snip1535:before,
 .snip1535:after {
@@ -53,7 +54,6 @@
   height: 100%;
   width: 100%;
 }
-
 #titlediv {
   padding: 20px;
 }

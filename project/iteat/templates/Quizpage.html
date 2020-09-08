@@ -20,8 +20,8 @@
     {% for quiz in quiz.all %}
     <div id="QUIZ">
       <p id="main">{{ quiz.title }}</p>
-      <a href ="{% url 'Quizdetail' quiz.id %}">
-      <button class="snip1535">답변 보기</button></a>
+      <a class="snip1535" href ="{% url 'Quizdetail' quiz.id %}">답변 보기</a>
+
     </div><br><br>
 {% endfor %}
 </form>
