@@ -1,0 +1,29 @@
+<html>
+<head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'main.css'%}">
+ <script type="text/javascript">
+ $(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
+
+ </script>
+</head>
+<body>
+    <div id="titlediv">
+      <p id="title">IT's eat<br>
+      <small id="subtitle">기술면접을 위해 도전하세요!</small></p>
+    </div>
+    <form method='GET'>
+    {% for quiz in quiz.all %}
+    <div id="QUIZ">
+      <p id="main">{{ quiz.title }}</p>
+      <a href ="{% url 'Quizdetail' quiz.id %}">
+      <button class="snip1535">답변 보기</button></a>
+    </div><br><br>
+{% endfor %}
+</form>
+</body>
+</html>
