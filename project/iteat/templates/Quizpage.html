@@ -44,8 +44,9 @@
         <a href="?page={{posts.previous_page_number}}"><button type="button" class="btn btn-dark">이전</button></a>&nbsp&nbsp&nbsp
     {%endif%}
       {%if posts.has_previous%}
-         <a class="listbutton" href="?page={{posts.previous_page_number}}"><button type="button" class="btn btn-dark">마지막 페이지</button></a>
+         <a class="listbutton" href="?page={{posts.previous_page_number}}"><button type="button" class="btn btn-dark">마지막 페이지</button></a>&nbsp&nbsp&nbsp
       {%endif%}
+      <a class="listbutton" href="{% url 'home' %}"><button type="button" class="btn btn-dark">홈으로 가기</button></a>
     </div>
 </body>
 </html>
