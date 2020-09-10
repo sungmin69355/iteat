@@ -25,9 +25,7 @@ SECRET_KEY = 'fqjng2@xhvxk&knwqjdx8jwo)e*2w(d&@quubcl-nq-q-jofjk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-      ".iteat.co.kr"
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
