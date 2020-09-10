@@ -27,8 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
       "*"
-      "www.iteat.co.kr"
-      ".iteat.co.kr"
 ]
 
 
