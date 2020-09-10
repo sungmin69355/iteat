@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=BenchNine:700');
+.a:link { color: #ffffff; text-decoration: none;}
+.a:visited { color: #ffffff; text-decoration: none;}
+.a:hover{color: #ffffff;text-decoration: none !important}
 .smbutton {
   background-color: #c47135;
   border: none;
@@ -46,6 +49,7 @@
 .smbutton:hover,
 .smbutton.hover {
   background-color: #c47135;
+ 
 }
 .smbutton:hover:before,
 .smbutton.hover:before,
