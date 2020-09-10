@@ -1,6 +1,7 @@
 <html>
 <head>
 {% load static %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static 'main.css'%}">
  <script type="text/javascript">
  $(".hover").mouseleave(
@@ -17,13 +18,25 @@
       <small id="subtitle">기술면접을 위해 도전하세요!</small></p>
     </div>
     <form method='GET'>
-    {% for quiz in quiz.all %}
+  {% for quiz in posts %}
     <div id="QUIZ">
       <p id="main">{{ quiz.title }}</p>
-      <a class="snip1535" href ="{% url 'Quizdetail' quiz.id %}">답변 보기</a>
-
+      <a class="smbutton" href ="{% url 'Quizdetail' quiz.id %}">답변 보기</a>
     </div><br><br>
-{% endfor %}
+  {% endfor %}
+    <div id="main">
+      {%if posts.has_previous%}
+        <a class="listbutton" href="?page=1"><button type="button" class="btn btn-dark">첫 번째 페이지</button></a>&nbsp&nbsp&nbsp
+        <a class="listbutton" href="?page={{posts.previous_page_number}}"><button type="button" class="btn btn-dark">마지막 페이지</button></a>&nbsp&nbsp
+      {%endif%}
+    <span>{{posts.number}}</span>&nbsp
+    <span> of </span>&nbsp
+    <span>{{posts.paginator.num_pages}}</span>&nbsp&nbsp
+      {%if posts.has_next%}
+        <a href="?page={{posts.next_page_number}}"><button type="button" class="btn btn-dark">다음</button></a>&nbsp&nbsp&nbsp
+        <a href="?page={{posts.paginator.num_pages}}"><button type="button" class="btn btn-dark">이전</button></a>
+      {%endif%}
+    </div>
 </form>
 </body>
 </html>

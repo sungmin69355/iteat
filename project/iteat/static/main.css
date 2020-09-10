@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=BenchNine:700');
-.snip1535 {
+.smbutton {
   background-color: #c47135;
   border: none;
   color: #ffffff;
@@ -17,8 +17,8 @@
   font-weight: 700;
   text-decoration: none;
 }
-.snip1535:before,
-.snip1535:after {
+.smbutton:before,
+.smbutton:after {
   border-color: transparent;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -29,28 +29,28 @@
   position: absolute;
   width: 24px;
 }
-.snip1535:before {
+.smbutton:before {
   border-color: #c47135;
   border-right-width: 2px;
   border-top-width: 2px;
   right: -5px;
   top: -5px;
 }
-.snip1535:after {
+.smbutton:after {
   border-bottom-width: 2px;
   border-color: #c47135;
   border-left-width: 2px;
   bottom: -5px;
   left: -5px;
 }
-.snip1535:hover,
-.snip1535.hover {
+.smbutton:hover,
+.smbutton.hover {
   background-color: #c47135;
 }
-.snip1535:hover:before,
-.snip1535.hover:before,
-.snip1535:hover:after,
-.snip1535.hover:after {
+.smbutton:hover:before,
+.smbutton.hover:before,
+.smbutton:hover:after,
+.smbutton.hover:after {
   height: 100%;
   width: 100%;
 }
@@ -88,4 +88,15 @@
   border-width: 5px;
 }
 
+#listbutton {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
 
+#listbutton:hover {
+
+  background: tomato; 
+
+  color: white;
+
+}
