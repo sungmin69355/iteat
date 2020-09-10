@@ -26,7 +26,11 @@ SECRET_KEY = 'fqjng2@xhvxk&knwqjdx8jwo)e*2w(d&@quubcl-nq-q-jofjk'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-      "*"
+      " 0.0.0.0:8000"
+      ".ap-northeast-2.compute.amazonaws.com"
+      ".ap-northeast-2.compute.amazonaws.com:8080"
+      "www.iteat.co.kr"
+      ".iteat.co.kr"
 ]
 
 
