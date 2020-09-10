@@ -20,7 +20,7 @@ from django.conf import settings
 import iteat.views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(' ',iteat.views.home,name='home'),
+    path('',iteat.views.home,name='home'),
     path('/',iteat.views.home,name='home'),
     path('iteat/', include('iteat.urls')),
 ]
