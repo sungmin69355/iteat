@@ -21,7 +21,6 @@ import iteat.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',iteat.views.home,name='home'),
-    path('/',iteat.views.home,name='home'),
     path('iteat/', include('iteat.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
